@@ -1,14 +1,14 @@
 #basic calculator
 while True:
-   num_1 = 10
-   num_2 = 5
+   nummber1 = 10
+   nummber2 = 5
    operations = input("Enter your operator here: \n (*, -, /, %, +)")
 
 #Error handling: If the user enter invalid number the program won't continue to be excuted using while loop in
 #  case the user fails, then the program does exit direclty
    try:
-    numint_1 = float(num_1)
-    numint_2 = float(num_2)
+    numint_1 = float(number1)
+    numint_2 = float(number2)
    except ValueError:
         print("Invalid input: Please Entr a number: \n")
         continue
