@@ -10,7 +10,7 @@ while True:
          continue
      print("let's continue")
 
-     area = float(length_i * width_i)
+     area = length_i * width_i
 
      print(f"the area is: {area}")
      break
