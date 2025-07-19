@@ -1,7 +1,7 @@
 #basic calculator
 while True:
-   num_1 = input("Enter your number: \n")
-   num_2 = input("Enter your number: \n")
+   num_1 = 10
+   num_2 = 5
    operations = input("Enter your operator here: \n (*, -, /, %, +)")
 
 #Error handling: If the user enter invalid number the program won't continue to be excuted using while loop in
