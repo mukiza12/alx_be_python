@@ -1,15 +1,24 @@
-#finance calculator
-income = input("Enter your monthly income: \n")
-expenses = input("Enter your total monthly expenses: \n")
+while True:
+    income = input("Enter your monthly income: \n")
+    expenses = input("Enter your total monthly expenses: \n")
+    try:
+        expenses_i = int(expenses)
+        income_i = int(income)
+    except ValueError:
+            print("invalid input")
+            continue
+    print(" ok lets continue")
+    
+    savings =  income_i - expenses_i
 
-expenses_i = int(expenses)
-income_i = int(income)
 
+    Projected_Savings = savings * 12 + (savings * 12 * 0.05)
 
-savings =  income_i - expenses_i
+    print(f"Your monthly savings are ${savings}")
+    print(f"Projected savings after one year, with interest, is: $p{Projected_Savings}.")
 
-
-Projected_Savings = savings * 12 + (savings * 12 * 0.05)
-
-print(f"Your monthly savings are ${savings}")
-print(f"Projected savings after one year, with interest, is: $p{Projected_Savings}.")
+    user_input = input('do you want to continue, yes or no?: \n').lower()
+    if user_input != "yes":
+        print('Thank you goodbye!')
+        break
+    
