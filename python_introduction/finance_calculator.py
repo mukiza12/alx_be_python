@@ -1,3 +1,5 @@
+
+#finance calculator
 while True:
     income = input("Enter your monthly income: \n")
     expenses = input("Enter your total monthly expenses: \n")
@@ -15,10 +17,13 @@ while True:
     Projected_Savings = savings * 12 + (savings * 12 * 0.05)
 
     print(f"Your monthly savings are ${savings}")
+
     print(f"Projected savings after one year, with interest, is: $p{Projected_Savings}.")
+    print(f"Projected savings after one year, with interest, is: ${Projected_Savings}.")
 
     user_input = input('do you want to continue, yes or no?: \n').lower()
     if user_input != "yes":
         print('Thank you goodbye!')
         break
-    
+
+
